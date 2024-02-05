@@ -6,27 +6,17 @@ import java.awt.Color;
 import java.sql.*;
 
 public class RegistrationForm extends JFrame implements ActionListener {
-    private final JLabel titleup;
-    private final JLabel titlein;
-    private final JLabel name;
     private final JTextField tname;
-    private final JLabel email;
     private final JTextField temail;
-    private final JLabel gender;
     private final JRadioButton male;
-    private final JRadioButton female;
-    private final ButtonGroup gendergp;
     private final JComboBox<String> date;
     private final JComboBox<String> month;
     private final JComboBox<String> year;
-    private final JLabel password;
     private final JTextField tpassword;
     private final JCheckBox terms;
     private final JButton signup;
     private final JButton signin;
-    private final JLabel emailin;
     private final JTextField temailin;
-    private final JLabel passwordin;
     private final JTextField tpasswordin;
 
     private final String[] dates = {"1", "2", "3", "4", "5", "6",
@@ -49,14 +39,14 @@ public class RegistrationForm extends JFrame implements ActionListener {
         Container container = getContentPane();
         container.setLayout(null);
 
-        titleup = new JLabel("Sign Up");
+        JLabel titleup = new JLabel("Sign Up");
         titleup.setFont(new Font("Arial", Font.BOLD, 30));
         titleup.setForeground(Color.BLUE);
         titleup.setSize(300, 30);
         titleup.setLocation(200, 30);
         container.add(titleup);
 
-        name = new JLabel("Name");
+        JLabel name = new JLabel("Name");
         name.setFont(new Font("Arial", Font.PLAIN, 20));
         name.setSize(100, 20);
         name.setLocation(50, 100);
@@ -68,7 +58,7 @@ public class RegistrationForm extends JFrame implements ActionListener {
         tname.setLocation(150, 100);
         container.add(tname);
 
-        email = new JLabel("Email");
+        JLabel email = new JLabel("Email");
         email.setFont(new Font("Arial", Font.PLAIN, 20));
         email.setSize(100, 20);
         email.setLocation(50, 150);
@@ -80,7 +70,7 @@ public class RegistrationForm extends JFrame implements ActionListener {
         temail.setLocation(150, 150);
         container.add(temail);
 
-        gender = new JLabel("Gender");
+        JLabel gender = new JLabel("Gender");
         gender.setFont(new Font("Arial", Font.PLAIN, 20));
         gender.setSize(100, 20);
         gender.setLocation(50, 200);
@@ -93,14 +83,14 @@ public class RegistrationForm extends JFrame implements ActionListener {
         male.setLocation(150, 200);
         container.add(male);
 
-        female = new JRadioButton("Female");
+        JRadioButton female = new JRadioButton("Female");
         female.setFont(new Font("Arial", Font.PLAIN, 20));
         female.setSize(100, 20);
         female.setSelected(false);
         female.setLocation(250, 200);
         container.add(female);
 
-        gendergp = new ButtonGroup();
+        ButtonGroup gendergp = new ButtonGroup();
         gendergp.add(male);
         gendergp.add(female);
 
@@ -128,7 +118,7 @@ public class RegistrationForm extends JFrame implements ActionListener {
         year.setLocation(320, 250);
         container.add(year);
 
-        password = new JLabel("Password");
+        JLabel password = new JLabel("Password");
         password.setFont(new Font("Arial", Font.PLAIN, 20));
         password.setSize(100, 20);
         password.setLocation(50, 300);
@@ -157,14 +147,14 @@ public class RegistrationForm extends JFrame implements ActionListener {
         signup.addActionListener(this);
         container.add(signup);
 
-        titlein = new JLabel("Sign In");
+        JLabel titlein = new JLabel("Sign In");
         titlein.setFont(new Font("Arial", Font.BOLD, 30));
         titlein.setForeground(Color.BLUE);
         titlein.setSize(300, 35);
         titlein.setLocation(200, 450);
         container.add(titlein);
 
-        emailin = new JLabel("Email");
+        JLabel emailin = new JLabel("Email");
         emailin.setFont(new Font("Arial", Font.PLAIN, 20));
         emailin.setSize(100, 20);
         emailin.setLocation(50, 500);
@@ -176,7 +166,7 @@ public class RegistrationForm extends JFrame implements ActionListener {
         temailin.setLocation(150, 500);
         container.add(temailin);
 
-        passwordin = new JLabel("Password");
+        JLabel passwordin = new JLabel("Password");
         passwordin.setFont(new Font("Arial", Font.PLAIN, 20));
         passwordin.setSize(100, 20);
         passwordin.setLocation(50, 550);
