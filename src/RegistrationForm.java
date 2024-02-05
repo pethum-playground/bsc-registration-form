@@ -41,7 +41,7 @@ public class RegistrationForm extends JFrame implements ActionListener {
             "2014", "2015", "2016", "2017", "2018", "2019"};
 
     public RegistrationForm() {
-        setTitle("SignIn/Up Window");
+        setTitle("Registration Form");
         setBounds(300, 90, 500, 700);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
